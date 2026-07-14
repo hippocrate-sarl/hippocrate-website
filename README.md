@@ -23,6 +23,8 @@ No build step required. Open any HTML file directly in a browser.
 | Page | Description |
 |---|---|
 | `index.html` | Homepage |
+| `nos-solutions.html` | Solutions page — presents Sigmund as Hippocrate's product, links out to sigmund.lu for detail |
+| `equipe.html` | Team page — founders' bios + LinkedIn (E-E-A-T) |
 | `contactus.html` | Contact page |
 | `cookies.html` | Cookie policy (noindex) |
 | `mentions-legales.html` | Legal notice (noindex) |

@@ -128,6 +128,22 @@ body {
   transform: translateY(-1px);
 }
 
+.btn-hp-outline {
+  border: 2px solid var(--hp-primary);
+  color: var(--hp-primary);
+  border-radius: 50px;
+  padding: .65rem 1.8rem;
+  font-weight: 600;
+  transition: all .2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-hp-outline:hover {
+  background: var(--hp-primary);
+  color: var(--hp-white);
+}
+
 /* ---------- Sections ---------- */
 .hp-section { padding: 4.375rem 0; }
 .hp-section-alt { background: var(--hp-light-bg); }
@@ -158,13 +174,19 @@ body {
   padding: 10px;
 }
 
+.hp-benefit-list { list-style: none; padding: 0; margin: 1.25rem 0; }
+.hp-benefit-list li { padding: .35rem 0; font-size: .95rem; color: #444; }
+.hp-benefit-list li i { color: var(--hp-primary); margin-right: .6rem; }
+
 /* ---------- Team cards ---------- */
 .hp-team-card { background: #fff; border: 1px solid var(--hp-border); border-radius: 16px; padding: 2rem 1.5rem; text-align: center; height: 100%; transition: box-shadow .2s, transform .2s; }
 .hp-team-card:hover { box-shadow: var(--hp-shadow); transform: translateY(-3px); }
 .hp-team-card img { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; margin-bottom: 1.25rem; border: 3px solid var(--hp-border); }
 .hp-team-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--hp-dark); margin-bottom: .25rem; }
 .hp-team-card .role { font-size: .85rem; font-weight: 600; color: var(--hp-primary); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 1rem; }
-.hp-team-card p { font-size: .9rem; color: #555; line-height: 1.7; margin: 0; }
+.hp-team-card p { font-size: .9rem; color: #555; line-height: 1.7; margin-bottom: 1.25rem; }
+.hp-team-card .btn-linkedin { display: inline-flex; align-items: center; gap: .4rem; font-size: .85rem; font-weight: 600; color: var(--hp-primary); border: 1.5px solid var(--hp-primary); border-radius: 50px; padding: .4rem 1rem; text-decoration: none; transition: all .2s; }
+.hp-team-card .btn-linkedin:hover { background: var(--hp-primary); color: #fff; }
 
 /* ---------- Footer ---------- */
 .hp-footer {

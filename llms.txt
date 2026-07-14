@@ -1,11 +1,19 @@
 # Hippocrate
 
-> Hippocrate Sàrl, société luxembourgeoise éditrice de logiciels de gestion administrative pour les professions médicales et paramédicales. Éditeur du logiciel Sigmund.
+> Hippocrate Sàrl est l'éditeur luxembourgeois de logiciels pour les professionnels de santé. Son produit phare est Sigmund, logiciel de gestion de patientèle certifié CNS pour psychiatres, psychologues et psychothérapeutes.
 
-Entreprise : Hippocrate Sàrl, Bertrange, Luxembourg | contact@hippocrate.lu | RCS Luxembourg B282221.
+## Pages prioritaires
 
-## Liens
+- [Accueil](https://www.hippocrate.lu/): la société et ses solutions
+- [Nos solutions](https://www.hippocrate.lu/nos-solutions.html): les logiciels édités par Hippocrate
+- [Notre équipe](https://www.hippocrate.lu/equipe.html): les fondateurs et l'expertise
+- [Contact](https://www.hippocrate.lu/contactus.html)
 
-- [Site](https://www.hippocrate.lu/): Page principale
-- [Sigmund](https://www.sigmund.lu/): Logiciel de gestion de cabinet pour psychiatres, psychothérapeutes et psychologues, édité par Hippocrate Sàrl
-- [Contact](https://www.hippocrate.lu/contactus.html): Formulaire de contact
+## Notre produit
+
+- [Sigmund](https://www.sigmund.lu): le logiciel de gestion de patientèle certifié CNS (agenda, dossier, facturation, PID)
+
+## Contact
+
+- Email : contact@hippocrate.lu
+- Téléphone : +352 621 223 881
