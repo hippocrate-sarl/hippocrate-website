@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /cookies.html
+Disallow: /mentions-legales.html
+
+Sitemap: https://www.hippocrate.lu/sitemap.xml
