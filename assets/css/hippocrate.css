@@ -44,7 +44,7 @@ body {
   font-weight: 500;
   padding: .4rem .9rem !important;
   border-radius: 6px;
-  transition: background .2s, color .2s;
+  transition: background .2s, color .2s, border-radius .2s;
 }
 
 .hp-navbar .nav-link:hover,
@@ -160,7 +160,22 @@ body {
 .hp-section-title span { color: var(--hp-primary); }
 
 /* ---------- CTA gradient section ---------- */
-.hp-cta-section { background: var(--hp-gradient); padding: 4.5rem 0; }
+.hp-cta-section {
+  background: var(--hp-gradient);
+  padding: 4.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hp-cta-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hp-cta-section .container { position: relative; z-index: 1; }
+
 .hp-cta-section .hp-cta-title { color: #fff; font-size: 1.6rem; font-weight: 800; margin-bottom: 1rem; }
 .hp-cta-section .hp-cta-lead { color: rgba(255,255,255,.85); max-width: 520px; margin: 0 auto 2rem; }
 .hp-cta-section .btn-hp-primary { background: #fff; color: var(--hp-primary); }
@@ -217,6 +232,7 @@ body {
 
 .hp-footer .copyright { color: #666; font-size: .8rem; }
 .hp-footer .copyright a { display: inline; color: #888; }
+.hp-footer p a { display: inline; }
 .hp-footer-about { color: #aaa; font-size: .87rem; line-height: 1.6; }
 
 /* ---------- Legal / resource page header ---------- */
