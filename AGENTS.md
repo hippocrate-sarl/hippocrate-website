@@ -86,7 +86,7 @@ Three columns on all pages:
 
 - Hippocrate Sàrl is the **publisher/holding company**; **Sigmund** is its SaaS product, marketed on its own separate site (`sigmund-website` repo, sigmund.lu). This site is the company's own corporate presence — team, contact, legal — not a product marketing site.
 - Legal entity: Hippocrate Sàrl, RCS Luxembourg B282221, VAT LU35353830, registered office 11 rue des Aubépines, L-8052 Bertrange, Luxembourg (confirmed correct — do not change to the "rue des Mérovingiens" address an SEO audit once flagged as a possible discrepancy). Director of publication: Sylvain Perez.
-- Team: Sylvain, Franck, Guillaume. `index.html` uses their shorter, more personal bios (original hippocrate.lu homepage tone); `equipe.html` uses the fuller professional bios + LinkedIn links + Person schema, matching `sigmund-website`'s own `equipe.html` content.
+- Team: Sylvain Perez, Guillaume Desrat, Franck Amouyal. `index.html`'s team cards are identical in content to `equipe.html`'s (same bios, LinkedIn links) — keep them in sync if either changes. Only `equipe.html` additionally carries the Person schema.
 - No cookie consent banner needed site-wide (only essential cookies are used) — matches the original site's behavior.
 - **Editor positioning (SEO golden rule):** anything that sells the product goes on sigmund.lu; anything about the company goes on hippocrate.lu. `nos-solutions.html` deliberately stays short and non-technical, always deferring to sigmund.lu for CNS/métier detail — don't let it grow into a duplicate of sigmund.lu's content, that would cannibalize its ranking.
 
