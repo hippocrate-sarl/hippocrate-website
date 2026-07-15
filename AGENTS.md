@@ -19,6 +19,7 @@ nos-solutions.html         Solutions page — presents Sigmund, links out to sig
 equipe.html                Team page — founders' bios + LinkedIn, Person schema
 contactus.html             Contact page
 cookies.html               Cookie policy (noindex)
+politique-relative-aux-donnees-personnelles.html  Personal data policy — contact form data processed via Brevo (noindex)
 mentions-legales.html      Legal notice (noindex)
 
 assets/css/hippocrate.css  All custom styles (shared by all pages)
@@ -78,7 +79,7 @@ Deliberately mirrors sigmund-website's design language (two-column gradient hero
 ## Footer structure
 
 Three columns on all pages:
-1. **Liens utiles** — Page d'accueil, Nos solutions, Notre équipe, Sigmund (external, sigmund.lu), Cookies, Mentions légales
+1. **Liens utiles** — Notre équipe, Cookies, Politique relative aux données personnelles, Mentions légales, then a **Ressources** sub-heading (same column) with Nos solutions, Sigmund (external, sigmund.lu)
 2. **À propos d'Hippocrate** — company registration paragraph (RCS number, registered office)
 3. **Contactez-nous** — email, two phone numbers, LinkedIn (company page, shared with sigmund-website's footer: `https://lu.linkedin.com/company/hippocrate-sarl`)
 
@@ -97,7 +98,7 @@ Three columns on all pages:
 - `favicon.ico` / `favicon-white.ico`: the original favicon had an opaque white square background; both variants now have a transparent background instead (built via luminance-as-alpha, since the source icon is pure grayscale — black icon on white). Every page links both via `media="(prefers-color-scheme: light|dark)"` so the icon stays visible against both light and dark browser tab bars. Browser support for favicon-switching via that media query is inconsistent across browsers — this is a best-effort progressive enhancement, not a guarantee.
 - Both favicon files also had the icon artwork rescaled to fill ~90-95% of the canvas at every embedded resolution (16 to 256px) — the original had inconsistent, sometimes as low as ~59% at 256px, leaving a lot of dead margin and making the icon look small/faint in tabs.
 - No build step — push to `main` branch deploys to GitHub Pages automatically.
-- `robots.txt` disallows `cookies.html` and `mentions-legales.html` — do not add other pages to the disallow list without reason.
+- `robots.txt` disallows `cookies.html`, `mentions-legales.html`, and `politique-relative-aux-donnees-personnelles.html` — do not add other pages to the disallow list without reason.
 - Cross-site entity consistency with `sigmund-website` (same company name/description everywhere, sigmund.lu's schema declaring Hippocrate as `parentOrganization`, footer cross-links both ways) is a known open item from the July 2026 SEO audit — not yet done, touches the sibling repo.
 
 ## Before proposing a commit

@@ -27,6 +27,7 @@ No build step required. Open any HTML file directly in a browser.
 | `equipe.html` | Team page — founders' bios + LinkedIn (E-E-A-T) |
 | `contactus.html` | Contact page |
 | `cookies.html` | Cookie policy (noindex) |
+| `politique-relative-aux-donnees-personnelles.html` | Personal data policy — contact form data processed via Brevo (noindex) |
 | `mentions-legales.html` | Legal notice (noindex) |
 
 ---

@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /cookies.html
 Disallow: /mentions-legales.html
+Disallow: /politique-relative-aux-donnees-personnelles.html
 
 Sitemap: https://www.hippocrate.lu/sitemap.xml
