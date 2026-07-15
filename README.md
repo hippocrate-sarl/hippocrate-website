@@ -41,21 +41,23 @@ Every page links to its counterparts via a flag-icon language switcher (navbar +
 ```
 assets/
 ├── css/
-│   └── hippocrate.css        All custom styles shared by every page
+│   └── hippocrate.css        All custom styles shared by every page, every language
 ├── js/
-│   └── main.js                Active nav-link highlight
+│   ├── main.js                Active nav-link highlight
+│   ├── contact.js             Contact form validation/submit (data-attribute driven, language-agnostic)
+│   └── legal-toc.js           Sidebar TOC active-link highlight + mobile accordion (privacy-policy pages only)
 └── images/
     ├── logo-hippocrate.svg                                Logo (recolored to brand color for the white navbar;
     │                                                       original asset was solid white, unmodified otherwise)
-    ├── hippocrate-hero.webp                               Homepage hero background
-    ├── keyboard.jpg                                        CTA section background
+    ├── logo-sigmund-alone.svg                              Sigmund icon in the product callout (transparent bg)
+    ├── hippocrate-hero.webp                                Homepage hero illustration
     ├── montre-gousset.webp                                "Le temps de soigner" illustration
     ├── psychotherapeute.webp                               Sigmund product callout illustration
-    ├── logo-sigmund-alone.svg                              Small Sigmund logo inside the product callout
-    └── team-sylvain-perez.webp / team-franck-amouyal.webp / team-guillaume-desrat.webp   Team photos
+    ├── made-in-luxembourg-blanc.webp                       "Made in Luxembourg" footer badge
+    └── team-sylvain-perez.webp / team-guillaume-desrat.webp / team-franck-amouyal.webp   Team photos
 ```
 
-`odoo-mirror/` at the repo root is a reference snapshot of the original Odoo-hosted site (raw HTML, images, framework CSS/JS), captured 2026-07-14 — kept for content reference only, not part of the live site.
+Favicons (`favicon.ico`/`favicon-white.ico` for light/dark browser tabs) live at the repo root, with identical byte-for-byte copies in `en/` and `de/` for crawlers that resolve favicons relative to the current page instead of the site root — see `AGENTS.md` for the full rationale.
 
 ---
 
