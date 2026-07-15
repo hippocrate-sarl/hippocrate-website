@@ -184,9 +184,37 @@ body {
 /* ---------- Product callout (Sigmund) ---------- */
 .hp-callout-img { border-radius: 16px; box-shadow: var(--hp-shadow); width: 100%; }
 
+.hp-callout-eyebrow {
+  display: block;
+  font-size: .78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--hp-primary);
+  margin-bottom: .75rem;
+}
+
+.hp-callout-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
 .hp-callout-logo {
-  width: 25%;
-  padding: 10px;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.hp-callout-heading h2,
+.hp-callout-heading h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--hp-dark);
+  letter-spacing: -.5px;
+  margin: 0;
 }
 
 .hp-benefit-list { list-style: none; padding: 0; margin: 1.25rem 0; }
@@ -370,6 +398,30 @@ body {
 
 /* ---------- Page intro ---------- */
 .hp-page-intro { color: #555; max-width: 600px; margin: 0 auto 2rem; }
+
+.hp-page-intro-lg {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--hp-dark);
+  max-width: 640px;
+  line-height: 1.5;
+}
+
+/* ---------- Roadmap note ---------- */
+.hp-roadmap-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .85rem;
+  background: var(--hp-light-bg);
+  border: 1px solid var(--hp-border);
+  border-radius: 14px;
+  padding: 1.1rem 1.75rem;
+  text-align: center;
+}
+
+.hp-roadmap-note i { font-size: 1.4rem; color: var(--hp-primary); flex-shrink: 0; }
+.hp-roadmap-note p { color: #555; font-size: .92rem; }
 
 /* ---------- Mobile ---------- */
 @media (max-width: 991px) {
