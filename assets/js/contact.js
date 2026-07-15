@@ -59,6 +59,15 @@
   frame.addEventListener('load', finishSuccess);
 
   form.addEventListener('submit', function (e) {
+    // Re-entrancy guard: blocks any second submission while one is in
+    // flight, regardless of what re-triggers "submit" (double-click,
+    // Enter key, autofill helpers, etc.) — disabling the button alone
+    // only stops clicks on that specific element.
+    if (submitting) {
+      e.preventDefault();
+      return;
+    }
+
     var valid = true;
 
     form.querySelectorAll('[data-required="true"]').forEach(function (el) {
