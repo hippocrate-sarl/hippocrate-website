@@ -8,7 +8,7 @@ Rebuilt from the original Odoo-hosted site, following the same static-site appro
 
 ## Overview
 
-Hippocrate Sàrl's own site is a small, bilingual (French/English) presentation of the company and its team, with a link out to Sigmund (the actual SaaS product, marketed on its own site) and a contact form. French is the default/primary language; the English version lives under `en/`, mirroring the file-per-language architecture used by [`sigmund-website`](https://github.com/hippocrate-sarl/sigmund-website).
+Hippocrate Sàrl's own site is a small, trilingual (French/English/German) presentation of the company and its team, with a link out to Sigmund (the actual SaaS product, marketed on its own site) and a contact form. French is the default/primary language; the English and German versions live under `en/` and `de/`, mirroring the file-per-language architecture used by [`sigmund-website`](https://github.com/hippocrate-sarl/sigmund-website).
 
 ---
 
@@ -20,19 +20,19 @@ No build step required. Open any HTML file directly in a browser.
 
 ## Pages
 
-French pages live at the repo root; each has an English counterpart under `en/` (different filename, English slug — matching sigmund-website's convention, not a 1:1 name mirror).
+French pages live at the repo root; each has an English counterpart under `en/` and a German counterpart under `de/` (different filename, translated slug per language — matching sigmund-website's convention, not a 1:1 name mirror).
 
-| FR page | EN page | Description |
-|---|---|---|
-| `index.html` | `en/index.html` | Homepage |
-| `nos-solutions.html` | `en/our-solutions.html` | Solutions page — presents Sigmund as Hippocrate's product, links out to sigmund.lu for detail |
-| `equipe.html` | `en/team.html` | Team page — founders' bios + LinkedIn (E-E-A-T) |
-| `nous-contacter.html` | `en/contact-us.html` | Contact page |
-| `politique-en-matiere-de-cookies.html` | `en/cookie-policy.html` | Cookie policy (noindex) |
-| `politique-relative-aux-donnees-personnelles.html` | `en/privacy-policy.html` | Personal data policy — contact form data processed via Brevo (noindex) |
-| `mentions-legales.html` | `en/legal-notice.html` | Legal notice (noindex) |
+| FR page | EN page | DE page | Description |
+|---|---|---|---|
+| `index.html` | `en/index.html` | `de/index.html` | Homepage |
+| `nos-solutions.html` | `en/our-solutions.html` | `de/unsere-loesungen.html` | Solutions page — presents Sigmund as Hippocrate's product, links out to sigmund.lu for detail |
+| `equipe.html` | `en/team.html` | `de/team.html` | Team page — founders' bios + LinkedIn (E-E-A-T) |
+| `nous-contacter.html` | `en/contact-us.html` | `de/kontakt.html` | Contact page |
+| `politique-en-matiere-de-cookies.html` | `en/cookie-policy.html` | `de/cookie-richtlinie.html` | Cookie policy (noindex) |
+| `politique-relative-aux-donnees-personnelles.html` | `en/privacy-policy.html` | `de/datenschutz.html` | Personal data policy — contact form data processed via Brevo (noindex) |
+| `mentions-legales.html` | `en/legal-notice.html` | `de/impressum.html` | Legal notice (noindex) |
 
-Every page links to its counterpart via a flag-icon language switcher (navbar + footer, `.hp-lang-switch`) and declares reciprocal `hreflang` `<link>` tags. EN pages reference the same shared `assets/` directory via `../assets/...` — there is no separate `en/assets/`.
+Every page links to its counterparts via a flag-icon language switcher (navbar + footer, `.hp-lang-switch`) and declares reciprocal `hreflang` `<link>` tags for all three languages. EN/DE pages reference the same shared `assets/` directory via `../assets/...` — there is no separate `en/assets/` or `de/assets/`.
 
 ---
 
@@ -67,7 +67,7 @@ All dependencies are loaded from CDN — nothing to install.
 |---|---|---|
 | Bootstrap | 5.3.3 | Layout, navbar, grid, utilities |
 | Bootstrap Icons | 1.11.3 | Icons (`bi bi-*`) |
-| flag-icons | 7.2.3 | FR/GB flag icons for the language switcher |
+| flag-icons | 7.2.3 | FR/GB/DE flag icons for the language switcher |
 | Google Fonts — Inter | — | Body font (300–800) |
 
 ---

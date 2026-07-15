@@ -1,19 +1,19 @@
 # Hippocrate
 
-> Hippocrate Sàrl est l'éditeur luxembourgeois de logiciels pour les professionnels de santé. Son produit phare est Sigmund, logiciel de gestion de patientèle certifié CNS pour psychiatres, psychologues et psychothérapeutes. / Hippocrate Sàrl is the Luxembourg software publisher for health professionals. Its flagship product is Sigmund, a CNS-certified practice management software for psychiatrists, psychologists and psychotherapists.
+> Hippocrate Sàrl est l'éditeur luxembourgeois de logiciels pour les professionnels de santé. Son produit phare est Sigmund, logiciel de gestion de patientèle certifié CNS pour psychiatres, psychologues et psychothérapeutes. / Hippocrate Sàrl is the Luxembourg software publisher for health professionals. Its flagship product is Sigmund, a CNS-certified practice management software for psychiatrists, psychologists and psychotherapists. / Hippocrate Sàrl ist der luxemburgische Softwareherausgeber für Gesundheitsfachkräfte. Sein Flaggschiffprodukt ist Sigmund, eine CNS-zertifizierte Praxisverwaltungssoftware für Psychiater, Psychologen und Psychotherapeuten.
 
-## Pages prioritaires / Priority pages
+## Pages prioritaires / Priority pages / Wichtige Seiten
 
-- [Accueil FR](https://www.hippocrate.lu/) / [Home EN](https://www.hippocrate.lu/en/index.html): la société et ses solutions / the company and its solutions
-- [Nos solutions FR](https://www.hippocrate.lu/nos-solutions.html) / [Our solutions EN](https://www.hippocrate.lu/en/our-solutions.html): les logiciels édités par Hippocrate / the software published by Hippocrate
-- [Notre équipe FR](https://www.hippocrate.lu/equipe.html) / [Our team EN](https://www.hippocrate.lu/en/team.html): les fondateurs et l'expertise / the founders and their expertise
-- [Contact FR](https://www.hippocrate.lu/nous-contacter.html) / [Contact EN](https://www.hippocrate.lu/en/contact-us.html)
+- [Accueil FR](https://www.hippocrate.lu/) / [Home EN](https://www.hippocrate.lu/en/index.html) / [Startseite DE](https://www.hippocrate.lu/de/index.html): la société et ses solutions / the company and its solutions / das Unternehmen und seine Lösungen
+- [Nos solutions FR](https://www.hippocrate.lu/nos-solutions.html) / [Our solutions EN](https://www.hippocrate.lu/en/our-solutions.html) / [Unsere Lösungen DE](https://www.hippocrate.lu/de/unsere-loesungen.html): les logiciels édités par Hippocrate / the software published by Hippocrate / die von Hippocrate herausgegebene Software
+- [Notre équipe FR](https://www.hippocrate.lu/equipe.html) / [Our team EN](https://www.hippocrate.lu/en/team.html) / [Unser Team DE](https://www.hippocrate.lu/de/team.html): les fondateurs et l'expertise / the founders and their expertise / die Gründer und ihre Expertise
+- [Contact FR](https://www.hippocrate.lu/nous-contacter.html) / [Contact EN](https://www.hippocrate.lu/en/contact-us.html) / [Kontakt DE](https://www.hippocrate.lu/de/kontakt.html)
 
-## Notre produit / Our product
+## Notre produit / Our product / Unser Produkt
 
-- [Sigmund](https://www.sigmund.lu): le logiciel de gestion de patientèle certifié CNS (agenda, dossier, facturation, PID) / CNS-certified practice management software (calendar, patient records, invoicing, PID)
+- [Sigmund](https://www.sigmund.lu): le logiciel de gestion de patientèle certifié CNS (agenda, dossier, facturation, PID) / CNS-certified practice management software (calendar, patient records, invoicing, PID) / CNS-zertifizierte Praxisverwaltungssoftware (Terminkalender, Patientenakten, Rechnungsstellung, PID)
 
 ## Contact
 
 - Email : contact@hippocrate.lu
-- Téléphone / Phone: +352 621 223 881
+- Téléphone / Phone / Telefon: +352 621 223 881
