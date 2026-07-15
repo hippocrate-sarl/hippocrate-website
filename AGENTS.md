@@ -17,8 +17,8 @@ French only — the original site has no other language versions.
 index.html                Homepage
 nos-solutions.html         Solutions page — presents Sigmund, links out to sigmund.lu (no CNS/métier detail — that's sigmund.lu's job)
 equipe.html                Team page — founders' bios + LinkedIn, Person schema
-contactus.html             Contact page
-cookies.html               Cookie policy (noindex)
+nous-contacter.html        Contact page
+politique-en-matiere-de-cookies.html  Cookie policy (noindex)
 politique-relative-aux-donnees-personnelles.html  Personal data policy — contact form data processed via Brevo (noindex)
 mentions-legales.html      Legal notice (noindex)
 
@@ -93,12 +93,12 @@ Three columns on all pages:
 
 ## What to watch out for
 
-- The contact form's submission backend needs to be decided (Brevo form, mailto fallback, or another service) — see conversation history / ask before treating `contactus.html`'s form as production-ready.
+- The contact form's submission backend needs to be decided (Brevo form, mailto fallback, or another service) — see conversation history / ask before treating `nous-contacter.html`'s form as production-ready.
 - The Hippocrate logo's original source asset (downloaded from hippocrate.lu) is solid white with a transparent background, meant to sit over a dark hero image. `logo-hippocrate.svg` is a recolored copy (fill swapped to `--hp-primary`) so it's visible on the white navbar — no white variant is kept since nothing on the site currently needs it.
 - `favicon.ico` / `favicon-white.ico`: the original favicon had an opaque white square background; both variants now have a transparent background instead (built via luminance-as-alpha, since the source icon is pure grayscale — black icon on white). Every page links both via `media="(prefers-color-scheme: light|dark)"` so the icon stays visible against both light and dark browser tab bars. Browser support for favicon-switching via that media query is inconsistent across browsers — this is a best-effort progressive enhancement, not a guarantee.
 - Both favicon files also had the icon artwork rescaled to fill ~90-95% of the canvas at every embedded resolution (16 to 256px) — the original had inconsistent, sometimes as low as ~59% at 256px, leaving a lot of dead margin and making the icon look small/faint in tabs.
 - No build step — push to `main` branch deploys to GitHub Pages automatically.
-- `robots.txt` disallows `cookies.html`, `mentions-legales.html`, and `politique-relative-aux-donnees-personnelles.html` — do not add other pages to the disallow list without reason.
+- `robots.txt` disallows `politique-en-matiere-de-cookies.html`, `mentions-legales.html`, and `politique-relative-aux-donnees-personnelles.html` — do not add other pages to the disallow list without reason.
 - Cross-site entity consistency with `sigmund-website` (same company name/description everywhere, sigmund.lu's schema declaring Hippocrate as `parentOrganization`, footer cross-links both ways) is a known open item from the July 2026 SEO audit — not yet done, touches the sibling repo.
 
 ## Before proposing a commit
