@@ -40,6 +40,8 @@ assets/images/             All images (webp + svg), shared by FR and EN pages vi
 
 favicon.ico                black icon, transparent background — light-theme browser tabs
 favicon-white.ico           white icon, transparent background — dark-theme browser tabs (prefers-color-scheme)
+en/favicon.ico              identical copy of the root favicon.ico
+en/favicon-white.ico        identical copy of the root favicon-white.ico
 _config.yml                Jekyll config — enables jekyll-redirect-from only
 robots.txt
 sitemap.xml
@@ -134,6 +136,7 @@ Contact form field `name` attributes (`NOM`, `TELEPHONE`, `EMAIL`, `SUJET`, `MES
 - The Hippocrate logo's original source asset (downloaded from hippocrate.lu) is solid white with a transparent background, meant to sit over a dark hero image. `logo-hippocrate.svg` is a recolored copy (fill swapped to `--hp-primary`) so it's visible on the white navbar — no white variant is kept since nothing on the site currently needs it.
 - `favicon.ico` / `favicon-white.ico`: the original favicon had an opaque white square background; both variants now have a transparent background instead (built via luminance-as-alpha, since the source icon is pure grayscale — black icon on white). Every page links both via `media="(prefers-color-scheme: light|dark)"` so the icon stays visible against both light and dark browser tab bars. Browser support for favicon-switching via that media query is inconsistent across browsers — this is a best-effort progressive enhancement, not a guarantee.
 - Both favicon files also had the icon artwork rescaled to fill ~90-95% of the canvas at every embedded resolution (16 to 256px) — the original had inconsistent, sometimes as low as ~59% at 256px, leaving a lot of dead margin and making the icon look small/faint in tabs.
+- `favicon.ico`/`favicon-white.ico` are duplicated at the repo root and inside `en/` (identical bytes). EN pages' `<link rel="icon">` tags already point up via `../favicon.ico`, which is all real browsers need — the `en/` copies exist only so a page-relative `favicon.ico` lookup (some crawlers/audit tools do this instead of following `<link>` tags, or instead of the browser's own root-relative fallback convention) also resolves. If you regenerate the favicon, update both copies.
 - No build step — push to `main` branch deploys to GitHub Pages automatically.
 - `robots.txt` disallows the noindex legal/cookie/privacy pages in both languages (`mentions-legales.html`/`en/legal-notice.html`, `politique-en-matiere-de-cookies.html`/`en/cookie-policy.html`, `politique-relative-aux-donnees-personnelles.html`/`en/privacy-policy.html`) — do not add other pages to the disallow list without reason.
 - Cross-site entity consistency with `sigmund-website` (same company name/description everywhere, sigmund.lu's schema declaring Hippocrate as `parentOrganization`, footer cross-links both ways) is a known open item from the July 2026 SEO audit — not yet done, touches the sibling repo.
