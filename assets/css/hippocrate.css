@@ -74,6 +74,26 @@ body {
   color: var(--hp-primary);
 }
 
+/* ---------- Language switch ---------- */
+.hp-lang-switch {
+  font-size: .85rem;
+  color: #666;
+}
+
+.hp-lang-switch a {
+  color: #888;
+  text-decoration: none;
+  padding: .2rem .5rem;
+  border-radius: 4px;
+  transition: background .15s, color .15s;
+}
+
+.hp-lang-switch a:hover { background: var(--hp-light-bg); color: var(--hp-primary); }
+.hp-lang-switch a.active { font-weight: 600; color: var(--hp-primary); }
+
+.hp-footer .hp-lang-switch a { display: inline; color: #888; font-size: .8rem; }
+.hp-footer .hp-lang-switch a.active { color: var(--hp-primary-lt); }
+
 /* ---------- Hero ---------- */
 .hp-hero {
   background: linear-gradient(135deg, var(--hp-hero-from) 0%, var(--hp-hero-to) 100%);
@@ -404,6 +424,9 @@ body {
 
 .hp-alert-note { background: rgba(101,67,92,.06); border-left: 4px solid var(--hp-primary); border-radius: 0 8px 8px 0; padding: .9rem 1.25rem; font-size: .88rem; color: #555; margin-bottom: 1.5rem; display: flex; gap: .6rem; }
 .hp-alert-note i { flex-shrink: 0; color: var(--hp-primary); margin-top: .2rem; }
+
+.hp-translation-note { font-size: .85rem; color: #888; border-left: 3px solid var(--hp-primary); padding-left: .75rem; margin-bottom: 2rem; }
+.hp-legal-note { font-size: .88rem; color: #666; margin-top: .75rem; }
 
 /* ---------- Contact form ---------- */
 .hp-contact-form .form-control {
